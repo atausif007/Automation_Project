@@ -40,7 +40,7 @@ fi
 if [ -f ${docroot}/inventory.html ];
 then
     size=$(du -h /tmp/${name}-httpd-logs-${timestamp}.tar | awk '{print $1}')
-	echo -e "httpd-logs\t-\t${timestamp}\t-\ttar\t-\t${size}" >> ${docroot}/invetntory.html
+	echo -e "httpd-logs\t-\t${timestamp}\t-\ttar\t-\t${size}" >> ${docroot}/inventory.html
 fi
 if [ ! -f /etc/cron.d/Automation ];
 then
